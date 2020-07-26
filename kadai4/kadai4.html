@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<html>
+  <body>
+
+    <h1>おみくじ</h1>
+    <button id = "start">おみくじスタート！</button>
+    <div id = "result">
+      
+    </div>
+    
+    </body>
+    <script>
+      
+      const start = document.getElementById("start");
+      const result = document.getElementById("result");
+    
+      const omikuji = ["大吉","中吉","吉","凶","大凶",]
+    
+      num = 0
+    
+      start.addEventListener("click",function() {
+    
+        const num = Math.floor(Math.random() * omikuji.length);
+    
+        result.textContent = omikuji[num];
+    
+      })
+    </script>
+    
+  　
+</body>
+</html>
